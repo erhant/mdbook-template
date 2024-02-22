@@ -1,0 +1,31 @@
+[book]
+authors = ["erhant"]
+language = "en"
+multilingual = false
+src = "content"
+title = "Your Notes"
+description = "Your Description"
+
+# uses KaTeX instead of MathJax, much better interop
+[preprocessor.katex]
+after = ["links"]
+
+# converts mermaid drawings to SVG
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+# generate table of contents
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output]
+
+[output.html]
+additional-css = ["./utilities/custom.css"]
+additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js"]
+git-repository-url = "https://github.com/username/reponame"
+git-repository-icon = "fa-github-alt"
+no-section-label = true
+default-theme = "rust"
+preferred-dark-theme = "navy"
