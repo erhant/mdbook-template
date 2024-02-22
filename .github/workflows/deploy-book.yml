@@ -6,9 +6,11 @@ env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
-# i want to manually do this
-on: workflow_dispatch
-
+on:
+  # push: # this will trigger on every push to main branch
+  workflow_dispatch: # you will manually dispatch the workflow
+    branches:
+      - main
 jobs:
   buildAndDeploy:
     runs-on: ubuntu-latest

@@ -1,5 +1,5 @@
 <p align="center" style="margin-top: 30vh">
-  <i>Welcome to my your-notes.</i>
+  <i>Welcome to your-notes.</i>
 </p>
 
 <p align="center" style="margin-top: 10px; margin-bottom: 10px;">
